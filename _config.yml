@@ -10,6 +10,9 @@ title: Kevin Jaffre - Portefolio
 description: Portefolio ...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
+github: kevinjaffre
+mail: kevin56620@gmail.com
+behance: kevinjaffre
 
 # Build settings
 markdown: kramdown
