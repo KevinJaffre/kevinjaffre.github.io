@@ -31,15 +31,10 @@
   margin-top: 30px;
 }
 
-.project-content {
-  @include layout($desktop);
-  @include container();
-}
-
-.project-link {
-  @include layout($desktop);
-  @include container();
+.project__link {
+  @include span(12);
   text-align: center;
+  margin-top: 75px;
 }
 
 .project__btn {
@@ -81,7 +76,7 @@
   .project__feature + .project__feature {
     margin-top: 15px;
   }
-  
+
   .project__btn {
     max-width: 150px;
     font-size: 16px;

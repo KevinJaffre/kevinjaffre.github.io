@@ -10,7 +10,7 @@
       <header class="header">
         <h1 class="title title--project"><span>{{page.name}}</span></h1>
         <h2 class="subtitle">{{page.subject}}</h2>
-        <p class="project-descr centered">{{page.presentation}}</p>
+        <p class="project-descr centered">{{ page.presentation }}</p>
       </header>
 
       <section class="section project-feature">
@@ -27,16 +27,11 @@
           </div>
           {% endfor %}
         </div>
-      </section>
-
-      <section class="section project-content">
-        {{ content }}
-      </section>
-
-      <section class="section project-link">
-        <a href="{{page.project-url}}" class="project__btn" target="_blank">
-          Voir le projet
-        </a>
+        <div class="project__link">
+          <a href="{{page.project-url}}" class="project__btn" target="_blank">
+            Voir le projet
+          </a>
+        </div>
       </section>
 
     {% include footer.html %}

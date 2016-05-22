@@ -5,7 +5,10 @@ layout: default
 <header class="header">
   <h1 class="title title--portefolio"><span>Kevin Jaffrezou</span></h1>
   <h2 class="subtitle">Développeur Front-End / Designer UI/UX</h2>
-  <p class="description centered">Suite à une formation en développement, j’ai décidé de me spécialiser en tant que développeur Front-End</p>
+  <p class="description centered">
+    Développeur de formation, je me m'intéresse aux technologies Web telles que : NodeJS, VueJS, Gulp, SCSS... où j'effectue une veille continue sur ces sujets. <br>
+    En complement je réalise des maquettes Photoshop que j'intègre par la suite pour des projets personnelles, à voir ci-dessous.
+  </p>
   <span class="discover">Découvrez mes réalisations</span>
 </header>
 
@@ -16,7 +19,7 @@ layout: default
       <div class="portefolio__project {% if project.featured == true %}featured{% endif %}">
         <div class="portefolio__img">
           <img src="{{ site.url }}/{{project.image}}" alt="Project presentation"
-          srcset="{{ site.url }}/{{project.image}} 1x ,
+          srcset="{{ site.url }}/{{project.image}} 1x,
           {{ site.url }}/{{project.image-retina}} 2x">
         </div>
         <div class="portefolio__content">
