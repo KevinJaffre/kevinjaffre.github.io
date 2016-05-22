@@ -15,7 +15,9 @@ layout: default
     <a href="{{project.url}}">
       <div class="portefolio__project {% if project.featured == true %}featured{% endif %}">
         <div class="portefolio__img">
-          <img src="{{ site.url }}/{{project.image}}" alt="Project presentation">
+          <img src="{{ site.url }}/{{project.image}}" alt="Project presentation"
+          srcset="{{ site.url }}/{{project.image}} 1x ,
+          {{ site.url }}/{{project.image-retina}} 2x">
         </div>
         <div class="portefolio__content">
           <div class="portefolio__wrapper">

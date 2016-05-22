@@ -15,7 +15,9 @@
 
       <section class="section project-feature">
         <div class="project__picture">
-          <img src="{{site.url}}/{{page.image}}" alt="Project presentation" />
+          <img src="{{ site.url }}/{{page.image}}" alt="Project presentation"
+          srcset="{{ site.url }}/{{page.image}} 1x ,
+          {{ site.url }}/{{page.image-retina}} 2x">
         </div>
         <div class="project__features">
           {% for feature in page.features %}
@@ -32,7 +34,7 @@
       </section>
 
       <section class="section project-link">
-        <a href="#" class="project__btn">
+        <a href="{{page.project-url}}" class="project__btn" target="_blank">
           Voir le projet
         </a>
       </section>
