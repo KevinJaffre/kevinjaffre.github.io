@@ -16,3 +16,9 @@ behance: kevinjaffre
 
 # Build settings
 markdown: kramdown
+
+# collections
+collections:
+  projects:
+   output: true
+   permalink: /project/:path/

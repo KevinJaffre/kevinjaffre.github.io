@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+      <header class="header">
+        <h1 class="title title--project"><span>{{page.name}}</span></h1>
+        <h2 class="subtitle">{{page.subject}}</h2>
+        <p class="project-descr centered">{{page.presentation}}</p>
+      </header>
+
+      <section class="section project-feature">
+        <div class="project__picture">
+          <img src="{{site.url}}/{{page.image}}" alt="Project presentation" />
+        </div>
+        <div class="project__features">
+          {% for feature in page.features %}
+          <div class="project__feature">
+            <h3 class="project__name-feature">{{ feature.title }}</h3>
+            <span class="project__content-feature">{{ feature.content }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="section project-content">
+        {{ content }}
+      </section>
+
+      <section class="section project-link">
+        <a href="#" class="project__btn">
+          Voir le projet
+        </a>
+      </section>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

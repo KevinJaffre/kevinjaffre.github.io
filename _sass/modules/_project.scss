@@ -3,8 +3,6 @@
   margin-top: 80px;
 }
 
-
-
 .project-feature {
   @include layout($desktop);
   @include container();
@@ -33,6 +31,34 @@
   margin-top: 30px;
 }
 
+.project-content {
+  @include layout($desktop);
+  @include container();
+}
+
+.project-link {
+  @include layout($desktop);
+  @include container();
+  text-align: center;
+}
+
+.project__btn {
+  display: inline-block;
+  width: 300px;
+  font-family: $font-classic;
+  font-weight: 500;
+  background-color: #63d273;
+  font-size: 22px;
+  line-height: 50px;
+  color: #fff;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background-color: #57c166;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
 @media screen and (max-width: 960px) {
 
   .project__picture {
@@ -54,5 +80,11 @@
 
   .project__feature + .project__feature {
     margin-top: 15px;
+  }
+  
+  .project__btn {
+    max-width: 150px;
+    font-size: 16px;
+    line-height: 40px;
   }
 }
