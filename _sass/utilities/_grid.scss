@@ -1,0 +1,26 @@
+$desktop: (
+  container: 1530px,
+  columns: 12,
+  gutters: 30px/100px,
+  math: fluid,
+  gutter-position: split,
+  column-width: 100px
+);
+
+$tablet: (
+  container: 1040px,
+  columns: 12,
+  gutters: 30px/100px,
+  math: fluid,
+  gutter-position: split,
+  column-width: 100px
+);
+
+$mobile: (
+  container: 550px,
+  columns: 12,
+  gutters: 30px/100px,
+  math: fluid,
+  gutter-position: split,
+  column-width: 100px
+);

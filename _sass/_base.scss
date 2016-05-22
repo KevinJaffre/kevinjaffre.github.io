@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-size: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  padding-top: 70px;
+  font-family: $font-classic;
+  font-weight: 500;
+  background-color: #f7f7f7;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section, .portefolio {
+  padding: 75px 30px;
+}
+
+@media screen and (max-width: 1040px) {
+  .section, .portefolio {
+    padding: 50px 20px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .section, .portefolio {
+    padding: 25px 10px;
+  }
+}

@@ -1,0 +1,258 @@
+@include layout($desktop);
+
+// About me section
+.about__me {
+  @include container();
+}
+
+.about__block {
+
+}
+
+.about__picture {
+  @include span(4);
+}
+
+.about__description {
+  @include span(8);
+}
+
+// Career section
+.career {
+  @include container();
+}
+
+.career__companies {
+  @include span(8);
+
+  .title-block {
+    margin-bottom: 30px;
+  }
+}
+
+.career__company + .career__company {
+  margin-top: 75px;
+}
+
+.career__skills li{
+  @extend p;
+  margin-top: 20px;
+}
+
+.career__school {
+  @include span(4);
+}
+
+.career__degrees {
+  li + li {
+    margin-top: 40px;
+  }
+}
+
+.degree__name {
+  @extend h3.title-block;
+}
+
+.degree__year {
+  float: right;
+  @extend p;
+  font-style: normal;
+}
+
+// Skills
+.skills {
+  @include container();
+}
+
+.skill__item {
+  @include span(3);
+  background-color: #fff;
+  box-shadow: 0 14px 29px rgba(0, 0, 0, 0.11);
+  padding: 10px;
+  text-align: center;
+  min-height: 340px;
+
+  img {
+    display: block;
+    margin: 30px auto;
+  }
+
+  p {
+    line-height: inherit;
+  }
+}
+
+.skill__title {
+  color: $color-medium;
+  font-family: $font-style;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.skills__more {
+    margin-top: 50px;
+}
+
+.skill__mitem {
+  @include span(3);
+
+
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    @extend p;
+  }
+}
+
+.hobbies {
+  @include container();
+}
+
+.hobby {
+  @include span(4);
+  position: relative;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hobby__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-dark;
+    font-family: $font-style;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  @include layout(tablet);
+
+  .about__me {
+    @include container();
+  }
+
+  .about__picture {
+    @include span(6);
+  }
+
+  .about__description {
+    @include span(6);
+  }
+
+  .career {
+    @include container();
+  }
+
+  .career__companies {
+    @include span(12);
+  }
+
+  .career__company + .career__company {
+    margin-top: 50px;
+  }
+
+  .career__school {
+    @include span(12);
+    margin-top: 75px;
+  }
+
+  .skills {
+    @include container();
+  }
+
+  .skill__item {
+    @include span(6);
+    margin-top: 15px;
+  }
+
+  .skill__mitem {
+    @include span(6);
+  }
+}
+
+@media screen and (max-width: 740px) {
+  @include layout(mobile);
+
+  .about__me {
+    @include container();
+  }
+
+  .about__picture {
+    @include span(12);
+    margin-bottom: 25px;
+  }
+
+  .about__description {
+    @include span(12);
+  }
+
+  .career {
+    @include container();
+  }
+
+  span.info-text {
+    font-size: 14px;
+  }
+
+  .career__companies {
+    @include span(12);
+  }
+
+  .career__company + .career__company {
+    margin-top: 30px;
+  }
+
+  .career__companies {
+    .title-block {
+      margin-bottom: 15px;
+    }
+  }
+
+  .career__school {
+    @include span(12);
+    margin-top: 50px;
+  }
+
+  .skills {
+    @include container();
+  }
+
+  .skill__item {
+    @include span(12);
+    margin-top: 15px;
+    min-height: auto;
+  }
+
+  .skill__mitem {
+    @include span(12);
+  }
+
+  .skill__mitem + .skill__mitem {
+    margin-top: 25px;
+  }
+
+  .skills__more {
+    margin-top: 25px;
+  }
+
+  .hobbies {
+    @include container();
+  }
+
+  .hobby {
+    @include span(12);
+  }
+
+  .hobby + .hobby {
+    margin-top: 25px;
+  }
+}

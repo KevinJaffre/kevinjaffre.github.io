@@ -1,0 +1,133 @@
+$border-width: 5px;
+
+h1.title {
+  font-family: $font-style;
+  font-weight: 500;
+  font-size: 48px;
+  color: $color-medium;
+  text-align: center;
+
+  &.title--portefolio {
+    margin-bottom: 80px;
+    span {
+      border-bottom: $border-width solid #4d8cff;
+    }
+  }
+
+  &.title--about {
+    span {
+      border-bottom: $border-width solid #ff4d4d;
+    }
+  }
+
+  &.title--contact {
+    span {
+      border-bottom: $border-width solid #ffc34d;
+    }
+  }
+
+  &.title--project {
+    margin-bottom: 80px;
+    span {
+      border-bottom: $border-width solid #63d273;
+    }
+  }
+}
+
+h2.subtitle {
+  font-family: $font-classic;
+  font-weight: 700;
+  color: $color-light;
+  font-size: 36px;
+
+  &.section__subtitle {
+    margin-bottom: 75px;
+  }
+}
+
+h3.title-block {
+  color: $color-dark;
+  font-family: $font-classic;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+h3.project__name-feature {
+  color: $color-medium;
+  font-family: $font-classic;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  color: $color-dark;
+  font-family: $font-classic;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+span.info-text {
+  font-family: $font-classic;;
+  font-size: 18px;
+  color: $color-light;
+
+  strong {
+    color: $color-dark;
+  }
+}
+
+.list-style {
+
+  li {
+    padding-left: 25px;
+    position: relative;
+  }
+
+  li:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #bebebe;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  h1.title {
+    font-size: 30px;
+
+    &.title--portefolio {
+      margin-bottom: 25px;
+    }
+
+    &.title--project {
+      margin-bottom: 25px;
+    }
+  }
+
+  h2.subtitle {
+    font-size: 22px;
+
+    &.section__subtitle {
+      margin-bottom: 40px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  h3.title-block {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  h3.project__name-feature {
+    font-size: 16px;
+  }
+}

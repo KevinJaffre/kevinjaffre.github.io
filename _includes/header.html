@@ -1,0 +1,17 @@
+<nav class="nav">
+  <div class="nav__logo">
+    Kevin
+  </div>
+  <a href="#" id="toggleMenu" class="btn-menu"></a>
+  <ul class="nav__list">
+    <a href="/" {%if page.url == "/"%}class="nav_item--active"{%endif%}>
+      <li>Projets</li>
+    </a>
+    <a href="/about" {%if page.url == "/about/"%}class="nav_item--active"{%endif%}>
+      <li>Présentation</li>
+    </a>
+    <a href="/contact" {%if page.url == "/contact/"%}class="nav_item--active"{%endif%}>
+      <li>Contact</li>
+    </a>
+  </ul>
+</nav>

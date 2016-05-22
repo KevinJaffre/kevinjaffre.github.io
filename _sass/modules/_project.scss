@@ -1,0 +1,58 @@
+.project-descr {
+  max-width: 900px;
+  margin-top: 80px;
+}
+
+
+
+.project-feature {
+  @include layout($desktop);
+  @include container();
+}
+
+.project__picture {
+  @include span(6);
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+.project__features {
+  @include span(6);
+}
+
+.project__content-feature {
+  @extend p;
+  color: $color-light;
+}
+
+.project__feature + .project__feature {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 960px) {
+
+  .project__picture {
+    @include span(12);
+  }
+
+  .project__features {
+    @include span(12);
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+
+  .project-descr {
+    margin-top: 25px;
+  }
+
+  .project__feature + .project__feature {
+    margin-top: 15px;
+  }
+}
