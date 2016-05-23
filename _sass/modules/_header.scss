@@ -4,11 +4,11 @@
 }
 
 .description {
-  font-family: $font-style;
-  font-size: 22px;
+  font-family: $font-classic;
+  font-size: 16px;
   color: $color-medium;
   max-width: 900px;
-  margin: 80px auto 120px auto;
+  margin: 30px auto 120px auto;
 }
 
 .discover {
@@ -32,7 +32,8 @@
 @media screen and (max-width: 740px) {
 
   .description {
-    margin: 25px auto 40px auto;
+    margin: 15px auto 40px auto;
+    font-size: 14px;
   }
 
   .header {

@@ -16,6 +16,7 @@ behance: kevinjaffre
 
 # Build settings
 markdown: kramdown
+host: 0.0.0.0
 
 # collections
 collections:
