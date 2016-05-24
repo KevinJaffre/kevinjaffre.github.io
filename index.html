@@ -6,17 +6,17 @@ layout: default
   <h1 class="title title--portefolio"><span>Kevin Jaffrezou</span></h1>
   <h2 class="subtitle">Développeur Front-End / Designer UI/UX</h2>
   <p class="description centered">
-    Développeur de formation, je me m'intéresse aux technologies Web telles que : NodeJS, VueJS, Gulp, SCSS... où j'effectue une veille continue sur ces sujets. <br>
-    En complement je réalise des maquettes Photoshop que j'intègre par la suite pour des projets personnelles, à voir ci-dessous.
+    Développeur de formation, je m'intéresse aux technologies Web telles que : NodeJS, VueJS, Gulp, SCSS... où j'effectue une veille continue sur ces sujets.
   </p>
   <span class="discover">Découvrez mes réalisations</span>
 </header>
 
 <section class="portefolio">
 
-  {% for project in site.projects %}
+{% assign featuredItems = site.projects | sort:"featured" reversed %}
+  {% for project in featuredItems %}
     <a href="{{project.url}}">
-      <div class="portefolio__project {% if project.featured == true %}featured{% endif %}">
+      <div class="portefolio__project {% if project.featured == 'a' %}featured{% endif %}">
         <div class="portefolio__img">
           <img src="{{ site.url }}/{{project.image}}" alt="Project presentation"
           srcset="{{ site.url }}/{{project.image}} 1x,
