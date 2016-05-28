@@ -16,7 +16,7 @@ a {
 .nav__logo {
   float: left;
   line-height: 70px;
-  font-size: 32px;
+  font-size: 28px;
   font-family: Quicksand;
 }
 
@@ -122,7 +122,11 @@ a {
         box-shadow: 0 10px 0 1px #fff, 0 20px 0 1px $color-light, 0 30px 0 1px #fff;
       }
     }
+  }
+}
 
-
+@media screen and (max-width: 340px) {
+  .nav__logo {
+    font-size: 20px;
   }
 }

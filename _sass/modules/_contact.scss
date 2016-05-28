@@ -1,16 +1,19 @@
 .contact {
   @include container();
-  padding-bottom: 200px;
+}
+
+.adresses {
+  padding: 100px 0;
 }
 
 .email {
+
   a {
     color: $color-light;
-    font-family: $font-classic;
+    font-family: $font-style;
     font-size: 36px;
     font-weight: 400;
     text-decoration: underline;
-
     &:hover {
       text-decoration: none;
     }
@@ -56,11 +59,13 @@
   color: #fff;
 }
 
-@media screen and (max-width: 740px) {
-  .contact {
-    padding-bottom: 25px;
+@media screen and (max-width: 1040px) {
+  .adresses {
+    padding: 50px 0;
   }
+}
 
+@media screen and (max-width: 740px) {
   .network {
     margin-top: 50px;
     display: block;
@@ -69,6 +74,10 @@
 
   .email a{
     font-size: 20px;
+  }
+
+  .adresses {
+    padding: 25px 0;
   }
 
 }

@@ -9,12 +9,14 @@ image: img/projects/presentation-fortin.png
 image-retina: img/projects/presentation-fortin@2x.png
 featured: z
 
-presentation: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+presentation: Projet de fin d'étude, nous étions 3 à nous occuper de ce projet pour un Client (M. Fortin) qui voulait refaire son site Web. Je me suis occupé de la partie Front-End ainsi que le Design pour m'aider dans mon intégration.
 project-url: https://www.fortin-animation.fr/
 
 features:
+  - title: Framework PHP
+    content: CodeIgniter
   - title: Technologies utilisées
-    content: LESS, Bootstrap, CodeIgniter
-  - title: Police de caractère
-    content: Roboto
+    content: LESS, Bootstrap
+  - title: Design
+    content: Photoshop, Illustrator
 ---

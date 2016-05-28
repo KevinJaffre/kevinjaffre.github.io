@@ -7,7 +7,7 @@
 
 # Site settings
 title: Kevin Jaffre - Portefolio
-description: Portefolio ...
+description: Bienvenue sur mon portefolio, je regroupe sur cette page l'ensemble des projets sur lesquels j'ai travaillé (développement comme design) donc n'hésitez pas à y jeter un coup d'œil.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 github: kevinjaffre
