@@ -28,9 +28,19 @@
           {% endfor %}
         </div>
         <div class="project__link">
-          <a href="{{page.project-url}}" class="project__btn" target="_blank">
-            Voir le projet
-          </a>
+
+          {% if page.project-url %}
+            <a href="{{page.project-url}}" class="project__btn project__btn--main" target="_blank">
+              Voir le projet
+            </a>
+          {% endif %}
+
+          {% if page.project-url-behance %}
+            <a href="{{page.project-url-behance}}" class="project__btn project__btn--behance" target="_blank">
+              Voir sur Behance
+            </a>
+          {% endif %}
+
         </div>
       </section>
 
