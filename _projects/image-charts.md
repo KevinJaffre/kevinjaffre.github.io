@@ -9,7 +9,7 @@ image: img/projects/presentation-image-charts.png
 image-retina: img/projects/presentation-image-charts@2x.png
 featured: a
 
-presentation: Undefined
+presentation: Ce site présente un système permettant de génerer des diagrammes via une url, pouvant être intégré à n'importe quel bot, email...
 project-url: https://image-charts.com/
 
 features:
