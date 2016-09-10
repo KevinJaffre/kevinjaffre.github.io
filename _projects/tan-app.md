@@ -13,8 +13,10 @@ presentation: J'ai développé ce petit programme afin de voir comment fonctionn
 project-url: https://github.com/KevinJaffre/TanChromeApp
 
 features:
+  - title: Type de projet
+    content: Perso
+  - title: Date fin de projet
+    content: Juin 2016
   - title: Technologies utilisées
     content: API Tan, Chrome Extension
-  - title: Design
-    content: Photoshop, Illustrator
 ---

@@ -14,10 +14,10 @@ project-url: https://www.fortin-animation.fr/
 project-url-behance: https://www.behance.net/gallery/32701691/Animateur-de-soire-FORTIN-Animation
 
 features:
-  - title: Framework PHP
-    content: CodeIgniter
+  - title: Type de projet
+    content: Projet de fin d'étude
+  - title: Date fin de projet
+    content: Mars 2016
   - title: Technologies utilisées
-    content: LESS, Bootstrap
-  - title: Design
-    content: Photoshop, Illustrator
+    content: LESS, Bootstrap, CodeIgniter
 ---
